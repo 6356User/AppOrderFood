@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    android:background="@color/activity_color"
+    tools:context=".DangNhapActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dangnhap"
+        android:layout_above="@+id/lnKhungDangNhap"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/size30sp"/>
+
+    <ImageView
+        android:layout_width="@dimen/size100dp"
+        android:layout_height="@dimen/size100dp"
+        android:src="@drawable/logodangnhap"
+        android:layout_above="@+id/lnKhungDangNhap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size100dp"/>
+    
+    <LinearLayout
+        android:id="@+id/lnKhungDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        
+        <EditText
+            android:id="@+id/edtTaiKhoanDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/tendangnhap"
+            android:minHeight="48dp"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"/>
+
+        <EditText
+            android:id="@+id/edtMatKhauDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/matkhau"
+            android:minHeight="48dp"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:password="true"/>
+
+        <Button
+            android:id="@+id/btnDongYDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/green"
+            android:padding="@dimen/size10dp"
+            android:text="@string/dongy"
+            android:textColor="#263238" />
+
+        <Button
+            android:id="@+id/btnDangKyDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/orange"
+            android:padding="@dimen/size10dp"
+            android:text="@string/dangky"
+            android:textColor="#424242" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemThemBanAn"
+        android:title="@string/thembanan" />
+    <item
+        android:id="@+id/itemThemThucDon"
+        android:title="@string/themthucdon" />
+
+    <item
+        android:id="@+id/itemThemNhanVien"
+        android:title="@string/themnhanvien" />
+</menu>

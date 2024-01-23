@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size200dp"
+    android:background="@drawable/backgroundheader1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoNavigation"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logodangnhap"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/txtTenNhanVienNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoNavigation"
+        android:textStyle="bold"
+        android:textSize="@dimen/size18sp"
+        android:layout_alignStart="@+id/logoNavigation"
+        android:layout_alignLeft="@+id/logoNavigation"/>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    android:background="@color/activity_color"
+    tools:context=".DangKyActivity">
+
+    <TextView
+        android:id="@+id/txtTieuDeDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dangky"
+        android:layout_above="@+id/lnKhungDangKy"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/size30sp"/>
+
+    <LinearLayout
+        android:id="@+id/lnKhungDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/edtTenDangNhapDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/tendangnhap"
+            android:minHeight="48dp"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/edtMatKhauDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/matkhau"
+            android:minHeight="48dp"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:password="true"/>
+
+        <RadioGroup
+            android:id="@+id/rgGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gtNam"
+                tools:ignore="TouchTargetSizeCheck"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gtNu"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinQuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size5dp">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edtNgaySinhDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/ngaysinh"
+            android:minHeight="48dp"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/edtCCCD_DK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_badge_24"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/cancuoccongdan"
+            android:minHeight="48dp"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:maxLength="12"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDongYDK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:padding="@dimen/size10dp"
+                android:text="@string/dongy"
+                android:textColor="#263238" />
+
+            <Button
+                android:id="@+id/btnThoatDK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:padding="@dimen/size10dp"
+                android:text="@string/thoat"
+                android:textColor="#424242" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
