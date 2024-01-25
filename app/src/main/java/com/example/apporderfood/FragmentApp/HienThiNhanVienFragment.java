@@ -24,6 +24,7 @@ import com.example.apporderfood.DAO.NhanVienDAO;
 import com.example.apporderfood.DTO.NhanVienDTO;
 import com.example.apporderfood.DangKyActivity;
 import com.example.apporderfood.R;
+import com.example.apporderfood.TrangChuActivity;
 
 import java.util.List;
 
@@ -41,6 +42,7 @@ public class HienThiNhanVienFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout_hienthinhanvien, container, false);
         setHasOptionsMenu(true);
+        ((TrangChuActivity)getActivity()).getSupportActionBar().setTitle(R.string.nhanvien);
 
         sharedPreferences = getActivity().getSharedPreferences("luuquyen", Context.MODE_PRIVATE);
         maquyen = sharedPreferences.getInt("maquyen",0);
